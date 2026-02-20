@@ -1,7 +1,7 @@
 name: NewBalance Stock Monitor
 on:
   schedule:
-    - cron: '*/30 * * * *' # 30分おきに実行
+    - cron: '*/1 * * * *' # 1分おきに実行
   workflow_dispatch:
 
 jobs:
