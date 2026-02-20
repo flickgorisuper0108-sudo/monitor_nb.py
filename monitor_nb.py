@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 
 # --- 設定 ---
 TARGET_URL = "https://outlet.newbalance.jp/pd/M1906AV1-48796.html?sm=Top+Results&pdq=1906A"
-WEBHOOK_URL = os.environ['https://discord.com/api/webhooks/782606611280953399/E6AJIIIkJC7ScmPw4iGC_-C1Ri62DXOLurhyHVfTr6ZR-zg98bynaTND7PFImnGTcFIV']
+WEBHOOK_URL = os.environ['DISCORD_WEBHOOK']
 
 def notify_discord(msg):
     requests.post(WEBHOOK_URL, json={"content": msg})
